@@ -27,7 +27,7 @@ const CSVReader = ({
             encoding: fileEncoding,
           }),
         )
-        onFileLoaded(csvData.data, filename)
+        onFileLoaded(csvData, filename)
       }
 
       reader.readAsText(e.target.files[0], fileEncoding)
